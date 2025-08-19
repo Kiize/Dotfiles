@@ -1,0 +1,11 @@
+{
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt-click": "click-right",
+        "format-alt": "",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": "Memory - {used:0.1f}GB used out of {total}GB ({percentage}%)"
+    }
+}

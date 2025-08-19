@@ -1,0 +1,9 @@
+{
+    "clock": {
+        "timezone": "Europe/Rome",
+        "format": " {:%H:%M}",
+        "tooltip": true,
+        "on-click": "setbg",
+        "tooltip-format": " {:%A, %B %e %Y}"
+    }
+}

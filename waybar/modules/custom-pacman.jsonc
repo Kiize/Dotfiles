@@ -1,0 +1,11 @@
+{
+    "custom/pacman": {
+    "format": "{text}  ",
+    "interval": 3600,                     // every hour
+	"exec": "$HOME/.config/waybar/scripts/package-update.sh",       // # of updates
+	"exec-if": "exit 0",                  // always run; consider advanced run conditions
+	"on-click": "termite -e 'yay'; pkill -SIGRTMIN+8 waybar", // update system
+	"signal": 8,
+	"tooltip": true
+     }
+}

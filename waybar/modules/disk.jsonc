@@ -1,0 +1,15 @@
+{
+    "disk": {
+        "interval": 600,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "format-alt-click": "click-right",
+        "format-alt": "󰋊",
+        "tooltip": true,
+        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
+        "states": {
+            "warning": 85,
+            "critical": 90
+        }
+    }
+}

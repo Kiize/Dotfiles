@@ -1,0 +1,7 @@
+{
+    "custom/power": {
+        "format": "",
+        "on-click": "sysact",
+        "tooltip": false
+    }
+}

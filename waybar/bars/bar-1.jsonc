@@ -1,0 +1,46 @@
+{
+    "include": [
+        "~/.config/waybar/modules/custom-rofi.jsonc",
+        "~/.config/waybar/modules/custom-weather.jsonc",
+        "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/wlr-taskbar.jsonc",
+        "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+        "~/.config/waybar/modules/tray.jsonc",
+        "~/.config/waybar/modules/battery.jsonc",
+        "~/.config/waybar/modules/pulseaudio.jsonc",
+        "~/.config/waybar/modules/backlight.jsonc",
+        "~/.config/waybar/modules/cpu.jsonc",
+        "~/.config/waybar/modules/memory.jsonc",
+        "~/.config/waybar/modules/disk.jsonc",
+        "~/.config/waybar/modules/temperature.jsonc",
+        "~/.config/waybar/modules/custom-pacman.jsonc",
+        "~/.config/waybar/modules/network.jsonc",
+        "~/.config/waybar/modules/custom-power.jsonc"
+    ],
+    
+    "modules-left": [
+        "custom/rofi",
+        "custom/weather",
+        "clock",
+        "wlr/taskbar"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+        
+    "modules-right": [
+        "tray",
+        "battery",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "backlight",
+        "cpu",
+        "memory",
+        "disk",
+        "temperature",
+        "custom/pacman",
+        "network",
+        "custom/power"
+    ] 
+}
