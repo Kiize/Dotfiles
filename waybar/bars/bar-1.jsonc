@@ -22,6 +22,7 @@
         "custom/rofi",
         "custom/weather",
         "clock",
+        "custom/pacman",
         "wlr/taskbar"
     ],
 
@@ -39,7 +40,6 @@
         "memory",
         "disk",
         "temperature",
-        "custom/pacman",
         "network",
         "custom/power"
     ] 

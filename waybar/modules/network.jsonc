@@ -1,13 +1,14 @@
 {
     "network": {
         "format": "{ifname}",
-        "format-wifi": " ",
+        "format-wifi": "  {bandwidthUpBytes}",
         "format-ethernet": " ",
         "format-disconnected": " ", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddr}",
         "tooltip-format-wifi": " {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+        "on-click": "iwgtk"
     }
 }
