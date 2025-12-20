@@ -1,5 +1,5 @@
 {
-    "pulseaudio": {
+    "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -19,7 +19,7 @@
         "tooltip-format": "{icon} at {volume}%"
     },
 
-    "pulseaudio#microphone": {
+    "wireplumber#microphone": {
         "format": "{format_source}",
         "format-source": "",
         "format-source-muted": "",

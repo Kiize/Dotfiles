@@ -8,6 +8,7 @@
         "~/.config/waybar/modules/tray.jsonc",
         "~/.config/waybar/modules/battery.jsonc",
         "~/.config/waybar/modules/pulseaudio.jsonc",
+        "~/.config/waybar/modules/wireplumber.jsonc",
         "~/.config/waybar/modules/backlight.jsonc",
         "~/.config/waybar/modules/cpu.jsonc",
         "~/.config/waybar/modules/memory.jsonc",
@@ -33,8 +34,10 @@
     "modules-right": [
         "tray",
         "battery",
-        "pulseaudio",
-        "pulseaudio#microphone",
+        "wireplumber",
+        "wireplumber#microphone",
+       /* "pulseaudio",
+        "pulseaudio#microphone",*/
         "backlight",
         "cpu",
         "memory",
@@ -42,5 +45,5 @@
         "temperature",
         "network",
         "custom/power"
-    ] 
+    ]     
 }
