@@ -1,0 +1,121 @@
+/**
+ * CYBERPUNK VERTICAL WALLPAPER SELECTOR (HYPRDOTS STYLE)
+ **/
+
+configuration {
+    modi:                        "dmenu";
+    show-icons:                  true;
+    drun-display-format:         "{name}";
+}
+
+/* Palette Cyberpunk */
+* {
+    bg-alpha:        #0a0a0fE6; /* Nero profondo trasparente */
+    cyan-neon:       #00f2ff;
+    magenta-neon:    #ff00ff;
+    fg-white:        #ffffff;
+    select-bg:       #1a1a24;
+}
+
+window {
+    enabled:                     true;
+    fullscreen:                  false;
+    width:                       80%;
+    height:                      70%;
+    anchor:                      center;
+    location:                    center;
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      4px;
+    border-radius:               0px; /* Cyberpunk preferisce angoli vivi o estremi */
+    border-color:                @cyan-neon;
+    background-color:            @bg-alpha;
+}
+
+mainbox {
+    enabled:                     true;
+    children:                    [ "inputbar", "listview" ];
+    background-color:            transparent;
+}
+
+inputbar {
+    enabled:                     true;
+    padding:                     20px;
+    background-color:            transparent;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                     true;
+    padding:                     10px 20px;
+    background-color:            @magenta-neon;
+    text-color:                  #000000;
+    font:                        "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    enabled:                     true;
+    padding:                     10px;
+    background-color:            @select-bg;
+    text-color:                  @fg-white;
+    cursor:                      text;
+    placeholder:                 "Search Wallpaper...";
+    placeholder-color:           inherit;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       1;
+    spacing:                     25px;
+    padding:                     20px;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    orientation:                 vertical;
+    spacing:                     0px;
+    padding:                     5px;
+    border:                      1px;
+    border-radius:               0px;
+    border-color:                #333333;
+    background-color:            transparent;
+    text-color:                  @cyan-neon;
+    cursor:                      pointer;
+}
+
+element selected {
+    background-color:            @select-bg;
+    text-color:                  @magenta-neon;
+    border:                      3px;
+    border-color:                @magenta-neon;
+}
+
+element-icon {
+    size:                        350px; /* Regola questa dimensione per la preview verticale */
+    cursor:                      inherit;
+    horizontal-align:            0.5;
+    vertical-align:              0.5;
+    background-color:            transparent;
+}
+
+element-text {
+    enabled:                     true;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    padding:                     10px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+    font:                        "JetBrainsMono Nerd Font Bold 10";
+}
